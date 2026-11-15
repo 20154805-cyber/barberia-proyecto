@@ -1,0 +1,175 @@
+/* Reset general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #111;
+    border-bottom: 2px solid #d4af37;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    color: #d4af37;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #d4af37;
+}
+
+/* Contenedor Principal */
+.main-container {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Grid de Servicios */
+.grid-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.8rem;
+    margin-top: 1rem;
+}
+
+.card-service {
+    background-color: #262626;
+    border-radius: 8px;
+    border: 1px solid #333;
+    overflow: hidden; /* Importante para que la imagen respete las esquinas redondeadas */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de la imagen del corte */
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Evita que la imagen se deforme */
+    border-bottom: 2px solid #d4af37;
+}
+
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card-service h3 {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.card-service p {
+    font-size: 0.95rem;
+    color: #ccc;
+    flex-grow: 1;
+}
+
+.card-service .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0.8rem 0;
+}
+
+.card-service button, #btn-confirmar {
+    background-color: #d4af37;
+    color: #111;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.card-service button:hover, #btn-confirmar:hover {
+    background-color: #b89628;
+}
+
+/* Formulario */
+.booking-section, .citas-section {
+    background-color: #262626;
+    padding: 1.8rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.booking-section h2, .citas-section h2, .services-section h2 {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+    color: #d4af37;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group input, .form-group select {
+    padding: 0.7rem;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Lista de Reservas */
+#lista-citas {
+    list-style: none;
+}
+
+#lista-citas li {
+    background-color: #1a1a1a;
+    padding: 0.8rem 1rem;
+    border-left: 4px solid #d4af37;
+    margin-bottom: 0.8rem;
+    border-radius: 2px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #111;
+    color: #888;
+    margin-top: 2rem;
+}
